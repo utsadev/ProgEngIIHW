@@ -16,8 +16,6 @@ public class Bicycle
 	//=======Constants========
 	 static final int NUM_GEARS = 6;
 	 //=======================
-	 
-	
 	void changeCadence(int x_c) //method
 	{ 
 	    cadence = x_c;
@@ -33,7 +31,7 @@ public class Bicycle
 	
 	void printNumGears() 
 	{
-	    System.out.println("The bicycle has" + NUM_GEARS + "gears!");
+	    System.out.println("The bicycle has" + NUM_GEARS+ " gears!");
 	}
 	
 	void applyBreak() 
@@ -61,10 +59,16 @@ public class Bicycle
 	public static void main(String[] args) 
 	{
 		Bicycle b1 = new Bicycle();
-		//Bicycle b2 = new Bicycle();
+		Bicycle b2 = new Bicycle();
+		b1.addGears(1);
+		b1.printNumGears();
+		b2.printNumGears();
+		b2.addGears(2);
+		b1.printNumGears();
+		b2.printNumGears();
 		//Instance Variables====
-		//b1.changeCadence(1); 
-		//b2.changeCadence(2);
+		b1.changeCadence(2); 
+		b2.changeCadence(4);
 		//=======Class Variables===
 		//b1.addGears(1); 
 		//b2.addGears(2);
