@@ -21,23 +21,23 @@
 #3. delete 'd' in the array
 newArray=['a', 'b', 'c', 'd', 'e']
 del newArray[3]
-print newArray
+print(newArray)
 #====4. reverse the array====
 newArray.reverse()
-print newArray
+print(newArray)
 #===5. sort the array=====
 Array_sample=['1',2,3,'hello','123','1111']
 Array_sample.sort()
-print Array_sample
+print(Array_sample)
 #===6. add an element to the front of an array
-shortArray=[1,2,3]
+shortArray = [1, 2, 3]
 a=-1
 longArray=[a]+shortArray
-print longArray
+print(longArray)
 b=-2
-longArray.insert(0,b)
-print longArray
+longArray.insert(0, b)
+print(longArray)
 
-mydic={"Java": "CE",
-       "Softwre Engineering":"CS"}
-print mydic
+mydic = {"Java": "CE",
+        "Softwre Engineering":"CS"}
+print(mydic)
