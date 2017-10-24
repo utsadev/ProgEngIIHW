@@ -10,9 +10,9 @@ class ChopStick{
     private ChopStick(String name) {this.name = name;}
     //returns the value of name that is correspsonding the object that is is called from
     public String toString(){return this.name;}
-    //calles the toSring function witha specific object variable associated with it
-    public static String access1() {return cs1.toString();}
-    public static String access2() {return cs2.toString();}
+    //returns the object of type ChopStick
+    public static ChopStick access1() {return cs1;}
+    public static ChopStick access2() {return cs2;}
 
 }
 
@@ -23,8 +23,11 @@ public class ChopStickDemo
     public static void main(String [] args)
     {   
 
-        System.out.println(ChopStick.access1()); //prints the name associated with cs1
-        System.out.println(ChopStick.access2()); //prints the name associated with cs2
+        ChopStick myChop1 = ChopStick.access1();
+        ChopStick myChop2 = ChopStick.access2();
+
+        System.out.println(myChop1.toString()); //prints the name associated with cs1
+        System.out.println(myChop2.toString()); //prints the name associated with cs2
 
     }
 
