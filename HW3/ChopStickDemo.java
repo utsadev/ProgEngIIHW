@@ -7,7 +7,7 @@ class ChopStick{
     private static ChopStick cs2 = new ChopStick("ChopStick2");
     
     //stores the parameter given to the variable name for the object that it was created
-    public ChopStick(String name) {this.name = name;}
+    private ChopStick(String name) {this.name = name;}
     //returns the value of name that is correspsonding the object that is is called from
     public String toString(){return this.name;}
     //calles the toSring function witha specific object variable associated with it
