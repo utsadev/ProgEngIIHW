@@ -22,6 +22,8 @@ public class HelloWorld {
 		System.out.println("What is your name?");
 		String name=input.nextLine(); //type name press enter
 		System.out.println("Welcome "+name+" to Java world");
+
+		input.close();
 		
 	}
 
