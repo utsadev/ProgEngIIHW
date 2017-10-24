@@ -52,17 +52,8 @@ class Cabbage extends Vegetable
 
 class VegeFamily
 {
-    //Tomato myT = new Tomato();
-    //Lettuce myL = new Lettuce();
-    //Cabbage myC = new Cabbage();
-    
-    
-    //public VegeFamily(){
-        //Tomato myT = new Tomato();
-        //Lettuce myL = new Lettuce();
-        //Cabbage myC = new Cabbage();
-        Vegetable[] array = new Vegetable[] {new Tomato(), new Lettuce(), new Cabbage() };
-    //}
+
+    Vegetable[] array = new Vegetable[] {new Tomato(), new Lettuce(), new Cabbage() };
 
     public void dispose(){
         for(int j = 0; j<array.length;j++){

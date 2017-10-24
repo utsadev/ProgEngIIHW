@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """Testing pulling data from bittrex"""
 #import url.request
 #import urllib.request as url
