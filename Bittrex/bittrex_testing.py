@@ -1,8 +1,9 @@
+#!/usr/bin/python3
 """Testing pulling data from bittrex"""
-import urllib
+#import url.request
 #import urllib.request as url
 #import urllib.request as url
-import url.lencode 
+#import url.parse
 #import url
 #from urllib.parse import urllibparse
 #import urllib.request.urlopen
@@ -27,18 +28,35 @@ def main():
     bitWeb = "https://bittrex.com/api/v1.1/public/getmarkets"
     #markSum = "https://bittrex.com/api/v1.1/public/getmarketsummaries"
 
-    my_bittrex = Bittrex(api_key, api_secret) # or defaulting to v1.1 as Bittrex(None, None)
-    testing = my_bittrex.get_markets()
+    #my_bittrex = Bittrex(api_key, api_secret) # or defaulting to v1.1 as Bittrex(None, None)
+    #testing = my_bittrex.get_markets()
 
     #myTest = bt.bittrex.Bittrex(api_key,api_secret)
 
-    print(testing)
+    #print(testing)
 
 
     #page = url.urlopen(bitWeb).read()
     #mSum = url.urlopen(markSum).read()
 
     #print(page)
+    #-------------------------------------------------
+    myB = Bittrex(api_key, api_secret)
+    #print(myB.get_markets())
+    #print(myB.get_balance('ETH'))
+    print(myB.get_balance('NAV'))
+    print("-------------")
+    balance = myB.get_balance('NAV')
+    #test = json.loads(myB.get_balance('ETH'))
+    #dump = json.dumps(test)
+    #print(dump)
+    print(type(balance))
+    #balTest = test["Balance"]
+    if "result"in balance:
+        print(balance["result"]["Balance"])
+        result = balance["result"]
+
+
     
 
 if __name__ == "__main__":
